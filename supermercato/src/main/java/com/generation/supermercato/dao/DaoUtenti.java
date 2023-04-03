@@ -35,16 +35,13 @@ public class DaoUtenti
 			switch(m.get("ruolo").toLowerCase())
 			{
 				case "admin"	:
-					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"),
-													m.get("nominativo"));
+					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"));
 				break;
 				case "lavoratore"	:
-					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"),
-													m.get("nominativo"));
+					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"));
 				break;
 				case "cliente"	:
-					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"),
-													m.get("nominativo"));
+					u = (Utente) context.getBean(	"utenteid",id, m.get("user"), m.get("pass"),m.get("email"), m.get("ruolo"));
 				break;
 			}
 		}
