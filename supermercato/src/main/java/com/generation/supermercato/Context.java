@@ -3,7 +3,6 @@ package com.generation.supermercato;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
 import com.generation.supermercato.dao.DaoProfilo;
 import com.generation.supermercato.dao.DaoCarrello;
 import com.generation.supermercato.dao.DaoCategoria;
@@ -11,7 +10,6 @@ import com.generation.supermercato.dao.DaoFornitori;
 import com.generation.supermercato.dao.DaoProdotti;
 import com.generation.supermercato.dao.DaoUtenti;
 import com.generation.supermercato.entities.Utente;
-
 import database.Database;
 
 /*Il codice rappresenta una classe di configurazione di Spring che
