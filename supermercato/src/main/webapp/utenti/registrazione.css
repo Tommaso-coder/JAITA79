@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://elekea.it/wp-content/uploads/2020/12/intolleranza-alimentari-food-table-scaled-scaled.jpeg');
+    background-position: center;
+
+}
+
+.box
+{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+}
+
+.box form
+{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2
+{
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.box form .inputBox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 25px;
+}
+
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.box form .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: grey;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+
+{
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-25px);
+}
+
+
+.box form .inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+
+.box form .link
+{
+display: flex;
+}
+
+.box form .link a 
+{
+margin: 10px 0px;
+font-size: 15px;
+color: #8f8f8f;
+text-decoration: none;
+}
+
+.box form .link a:hover 
+{
+    color: white;
+}
+
+#pulsantelogin
+{
+    border: none;
+    outline: none;
+    padding: 9px 9px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#pulsantelogin:active
+{
+    opacity: 0.8;
+}
